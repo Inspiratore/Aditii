@@ -1,0 +1,478 @@
+/* ==========  Desktop First ========== */
+
+
+/* ==========  Large Devices, Wide Screens ========== */
+@media only screen and (max-width:1280px)
+	.top-nav
+		#search
+			transform: translate(65px,16px)
+		.loupe
+			transform: translate(35px,30px)
+
+	#promo
+		.carousel-caption
+		p
+			padding-left: 90px
+
+	.f_product
+		margin: 0 70px 50px 70px
+
+/* ==========  Medium Devices, Desktops ========== */
+@media only screen and (max-width:1024px)
+	#promo
+		padding: 65px 245px 60px 85px
+		p
+			padding-left: 40px
+		.carousel-inner
+			margin-left: 75px
+
+	#goods_slider
+		.slideX 
+			img:first-child
+				padding-left: 35px
+				padding-right: 0
+		.slider_caption
+			transform: translate(195px,-120px)		
+
+	#featured_products
+		margin-bottom: 25px
+		.f_product
+			margin: 25px
+
+	#footer
+		.col-md-auto
+			margin: 0 25px
+
+/* ==========  Small Devices, Tablets ========== */
+@media only screen and (max-width:768px)
+	.top-nav
+		.col-md-auto
+			width: 150px
+		.col-md-auto:nth-child(2)
+			width: 300px
+		#search
+			width: 270px
+			transform: translate(-20px,25px)
+		.loupe
+			transform: translate(223px,-1px)
+
+	#main_menu
+		position: relative
+
+		.menu
+			width: 100%
+			ul
+				margin: 5px
+				padding: auto
+				li
+					font-size: 1em
+
+					&:nth-child(even)
+						display: none
+					a
+						padding: 5px
+
+	#promo
+		padding: 65px 64px 60px 40px
+		h2
+			font-size: 2em
+			padding-right: 80px
+		p
+			padding-left: 40px
+		.buy
+			margin-left: 140px
+		.carousel-inner
+			margin-left: 0
+		
+
+	#goods_slider
+		.slideX 
+			img:first-child
+				padding-left: 40px
+				padding-right: 0
+		.slider_caption
+			transform: translate(210px,-120px)
+		.owl-next
+			right: 6%	
+
+	#featured_products
+		margin-bottom: 25px
+		.f_product
+			margin: 0 5px 25px 5px
+			width: 190px
+
+	#footer
+		.col-md-auto
+			width: 32%
+			margin: 0 1% 0 5%
+			padding: 0 1% 0 5%
+
+/* ==========  Extra Small Devices, Phones ========== */
+@media only screen and (max-width:414px)
+	.top-nav
+		.col-md-auto
+			padding: 0
+			width: 100px
+		.col-md-auto:nth-child(2)
+			width: 150px
+		#site_name
+			font-size: .8em
+		#search
+			width: 120px
+			height: 20px
+			transform: translate(0px,32px)
+		.loupe
+			transform: translate(100px,12px)
+			background-size: 15px 15px
+		#cart
+			transform: translate(0px,10px)
+			height: 20px
+			width: auto
+		#total
+			font-size: 1.3em
+			transform: translate(1px,15px)
+
+	#main_menu
+		position: relative
+		.hamburger
+			display: inline-block
+			padding: 0
+			position: absolute
+			top: 0px
+			left: 35px
+			margin: 3px 0
+			height: 25px
+			.hamburger-box
+				width: 25px
+				height: 25px
+			.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+				background: $text
+				width: 25px
+				height: 2px
+				margin: 4px 0
+			.hamburger-inner::before
+				margin: 1.5px 0 
+
+
+		.menu
+			position: absolute
+			z-index: 101
+			background: $blocks
+			display: none
+			width: 100%
+			top: 30px
+			ul
+				margin: 0 5px
+				padding: 0
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+
+				li
+					font-size: 1em
+
+					&:nth-child(even)
+						display: none
+					a
+						padding: 5px
+
+	#promo
+		padding: 10px
+		height: 240px
+		.item
+			height: 220px
+		.carousel-caption
+			height: 180px
+			padding: 0px
+
+		img
+			width: 140px
+			height: auto
+			margin-top: 20px
+		h2
+			font-size: 1.2em
+			margin: -20px 0 0 55px
+			padding: 0
+		p
+			font-size: .8em
+			margin: 5px 0 0 117px
+			padding: 10px 0
+			white-space: normal
+			line-height: 1.5em
+			width: 190px
+
+			br
+				display: none
+		.buy
+			width: 80px
+			height: 24px
+			font-size: .7em
+			border: 1px solid $text
+			border-radius: 5px
+			margin: 5px 0 10px 55px
+			padding: 2px 4px 2px
+		.carousel-inner
+			margin-left: 0
+		li[data-target]
+			width: 5px
+			height: 5px
+			margin: 1px
+			padding: 1px
+			
+
+	#all_goods
+		height: 120px
+	#goods_slider
+		height: 120px
+		.slideX 
+			height: 120px
+			padding: 5px
+			img
+				height: 100px
+				width: auto
+			img:first-child
+				padding-left: 60px
+				padding-right: 0
+			h4
+				font-size: 1.5em
+			a
+				font-size: 1em
+		.slider_caption
+			transform: translate(235px,-100px)
+		.owl-prev, .owl-next
+			bottom: 170px
+		.owl-next
+			right: 10%	
+
+	#featured_products
+		margin-bottom: 5px
+		.top_line
+			margin: 0 0 20px 0
+			height: 35px
+		h3
+			top: -14px
+			left: 135px
+			font-size: 1.5em
+		.f_product
+			height: 210px
+			padding: 15px 0
+			margin: 0 5px 5px 5px
+			width: 160px
+			img
+				height: 100px
+				width: auto
+			h4
+				font-size: 1.4em
+			.prod_info
+				top: 57%
+			.product_price
+				font-size: 1.2em
+			.buy_now
+				width: 60px
+				font-size: .9em
+				padding: 1px 5px
+
+	#footer
+		margin-top: 10px
+		padding: 0
+		.col-md-auto
+			width: 32%
+			margin: 0 1% 0 5%
+			padding: 0 1% 0 5%
+		h4
+			font-size: 1.5em
+			height: 75px
+			padding: 20px 0 10px
+			m0
+
+
+/* ==========  Custom, iPhone Retina ========== */
+@media only screen and (max-width:320px)
+	.top-nav
+		.col-md-auto
+			padding: 0
+			width: 40px
+		.col-md-auto:nth-child(2)
+			width: 100px
+		#site_name
+			font-size: .6em
+		#search
+			width: 60px
+			height: 15px
+			transform: translate(12px,20px)
+		.loupe
+			transform: translate(-4px,40px)
+			background-size: 10px 10px
+		#cart
+			transform: translate(-25px,30px)
+			height: 20px
+			width: auto
+		#total
+			font-size: 1.3em
+			transform: translate(1px,-7px)
+
+	#main_menu
+		position: relative
+		.hamburger
+			display: inline-block
+			padding: 0
+			position: absolute
+			top: 0px
+			left: 5px
+			padding: 3px 0
+			height: 25px
+			margin: 0
+			.hamburger-box
+				width: 25px
+				height: 25px
+			.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+				background: $text
+				width: 25px
+				height: 2px
+				margin: 4px 0
+			.hamburger-inner::before
+				margin: 1.5px 0 
+
+
+		.menu
+			display: none
+			width: 100%
+			margin-top: 5px
+			ul
+				margin: 0 5px
+				padding: 0 5%
+				li
+					font-size: 1em
+
+					&:nth-child(even)
+						display: none
+					a
+						padding: 5px
+
+	#promo
+		padding: 10px
+		height: 220px
+		.item
+			height: 200px
+		.carousel-caption
+			height: 200px
+			padding: 0px
+
+		img
+			width: 110px
+			height: auto
+			margin-top: 20px
+		h2
+			font-size: 1.2em
+			margin: -40px 0 0 56px
+			padding: 0
+		p
+			font-size: .8em
+			margin: 5px 0 0 80px
+			padding: 5px
+			white-space: normal
+			line-height: 1.5em
+			width: 150px
+
+			br
+				display: none
+		.buy
+			width: 60px
+			height: 20px
+			font-size: .6em
+			border: 1px solid $text
+			border-radius: 5px
+			margin: 5px 0 10px 38px
+			padding: 3px 4px 13px
+		.carousel-inner
+			margin-left: 0
+		li[data-target]
+			width: 5px
+			height: 5px
+			margin: 1px
+			padding: 1px
+			
+			
+
+	#all_goods
+		height: 100px
+	#goods_slider
+		height: 100px
+		margin-top: 10px
+		.slideX 
+			height: 100px
+			padding: 5px
+			img
+				height: 70px
+				width: auto
+			img:first-child
+				padding-left: 50px
+				padding-right: 0
+			h4
+				font-size: 1.3em
+			a
+				font-size: .9em
+				vertical-align: middle
+			.shop
+				width: 40px
+				height: 22px
+				margin: 0
+				padding: 0
+		.slider_caption
+			transform: translate(180px,-80px)
+		.owl-prev, .owl-next
+			bottom: 150px
+			font-size: .9em
+		.owl-next
+			right: 11.5%	
+
+	#featured_products
+		margin-bottom: 5px
+		.top_line
+			margin: 0 0 20px 0
+			height: 35px
+		h3
+			top: -14px
+			left: 85px
+			font-size: 1.4em
+		.f_product
+			height: 200px
+			padding: 15px 0
+			margin: 0 5px 5px 5px
+			width: 140px
+			img
+				width: auto
+				height: 80px
+			.prod_info
+				top: 55%
+			h4
+				font-size: 1.4em
+			.product_price
+				font-size: 1.3em
+			.buy_now
+				width: 60px
+				font-size: .9em
+				padding: 0
+
+	#footer
+		margin-top: 10px
+		padding: 0
+		.col-md-auto
+			width: 32%
+			margin: 0 1% 0 5%
+			padding: 0 1% 0 5%
+		h4
+			font-size: 1.5em
+			height: 75px
+			padding: 20px 0 10px
+		p
+			font-size: .8em
+
+	.copywrite
+		font-size: .8em
+		padding: 10px
+		height: 40px
+
+
+/* ==========  Mobile First ==========

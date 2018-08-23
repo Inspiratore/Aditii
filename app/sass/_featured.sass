@@ -1,0 +1,64 @@
+.top_line
+	background: $blocks
+	height: 70px
+	margin: 0
+	margin-bottom: 50px
+	position: relative
+
+	h3
+		position: absolute
+		color: $text
+		font-family: $bebas
+		font-size: 2.1em
+		text-transform: uppercase
+		left: 185px
+		vertical-align: middle
+
+.f_product
+	width: 270px
+	height: 270px
+	border: 1px solid transparentize($text2,.7)
+	border-bottom: 2px solid $buttons
+	border-radius: 5px
+	margin: 0 70px 50px 70px
+	vertical-align: middle
+	text-align: center
+	padding: 25px 0
+	color: $text2
+	font-family: $bebas
+	text-transform: uppercase
+	position: relative
+
+	.prod_info
+		position: absolute
+		text-align: center
+		top: 60%
+		margin-left: auto
+		margin-right: auto
+		left: 0
+		right: 0
+
+
+	h4	
+		font-size: 1.8em
+	span
+		font-size: 1.5em
+		display: inline-block
+		padding-right: 10px
+		transform: translateY(3px)
+		color: darken($text2,2%)
+
+	button
+		width: 75px
+		background: $buttons
+		color: $text
+		border: none
+		border-radius: 3px
+		&:hover
+			background: $text
+			color: $buttons
+			border: 1px solid $buttons
+		&:active
+			background: $text
+			color: $text2
+			border: 1px solid $buttons

@@ -1,0 +1,90 @@
+#goods_slider, #all_goods
+	height: 190px
+.slideX
+	width: 100%
+	padding: 25px 10px
+	white-space: nowrap
+	border-right: 1px solid transparentize($text2,.7)
+	height: 170px
+	&:last-child
+		border: 0
+	img
+		height: 120px
+		width: auto !important
+		padding: 0 25px
+		&:first-child
+			padding-left: 80px
+
+	.slider_caption
+		transform: translate(250px,-120px)
+		width: 80px
+		height: auto
+
+		h4
+			text-transform: uppercase
+			font-family: $bebas
+			font-size: 1.8em
+			color: $text2
+
+		button
+			width: 60px
+			background: $buttons
+			color: $text
+			border: none
+			border-radius: 3px
+			&:hover
+				background: $text
+				color: $buttons
+				border: 1px solid $buttons
+				a
+					background: $text
+					color: $buttons
+			&:active
+				background: $text
+				color: $text2
+				border: 1px solid $buttons
+				a
+					background: $text
+					color: $text2
+			a
+				text-decoration: none
+				text-transform: uppercase
+				text-align: center
+				vertical-align: middle
+				color: $text
+				font-family: $bebas
+				font-size: 1.1em
+				
+					
+
+// OWL-CAROUSEL
+	
+.owl-nav, .owl-dots
+	width: 0
+	height: 0
+	margin: 0
+
+.owl-prev, .owl-next
+	position: relative
+	span
+		position: absolute
+		vertical-align: middle
+		font-size: 8em 
+		color: transparentize($text2,.7)
+		height: 0px
+.owl-prev
+	position: absolute
+	left: 1.5%
+	bottom: 200px
+.owl-next
+	position: absolute
+	right: 4%
+	bottom: 200px
+
+				
+					
+
+
+
+			
+
