@@ -3,4 +3,4 @@ logs/
 #ignore .txt
 docs/*.txt
 #.sass-cache
-app/.sass-cache
+app/.sass-cache/c72573557137123230d3560fa1208ce056be936e/_vars.sassc
