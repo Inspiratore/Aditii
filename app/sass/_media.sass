@@ -3,16 +3,27 @@
 
 /* ==========  Large Devices, Wide Screens ========== */
 @media only screen and (max-width:1280px)
-	.top-nav
-		#search
-			transform: translate(65px,16px)
-		.loupe
-			transform: translate(35px,30px)
-
+	#search
+		transform: translate(65px,16px)
+	.loupe
+		transform: translate(35px,30px)
 	#promo
-		.carousel-caption
+		padding: 65px 20% 60px 10%
 		p
-			padding-left: 90px
+			margin-left: 150px
+			padding-left: 100px
+		.carousel-inner
+			margin-left: 75px
+
+		.buy
+			margin-left: 130px
+	.slideX
+		img:first-child
+			padding-left: 70px
+
+		.slider_caption
+			transform: translate(240px,-120px)
+
 
 	.f_product
 		margin: 0 70px 50px 70px
@@ -185,22 +196,23 @@
 		.carousel-caption
 			height: 180px
 			padding: 0px
+			padding-top: 25px
 
 		img
 			width: 140px
 			height: auto
-			margin-top: 20px
+			padding-top: 15px
 		h2
-			font-size: 1.2em
-			margin: -20px 0 0 55px
+			font-size: 1.4em
+			margin: -20px 0 0 70px
 			padding: 0
 		p
-			font-size: .8em
-			margin: 5px 0 0 117px
+			font-size: .7em
+			margin: 10px 0 5px 120px
 			padding: 10px 0
 			white-space: normal
 			line-height: 1.5em
-			width: 190px
+			width: 150px
 
 			br
 				display: none
@@ -210,7 +222,7 @@
 			font-size: .7em
 			border: 1px solid $text
 			border-radius: 5px
-			margin: 5px 0 10px 55px
+			margin: 5px 0 10px 60px
 			padding: 2px 4px 2px
 		.carousel-inner
 			margin-left: 0
@@ -358,18 +370,19 @@
 		.carousel-caption
 			height: 200px
 			padding: 0px
+			top: 55px
 
 		img
 			width: 110px
 			height: auto
-			margin-top: 20px
+			padding-top: 20px
 		h2
 			font-size: 1.2em
 			margin: -40px 0 0 56px
 			padding: 0
 		p
-			font-size: .8em
-			margin: 5px 0 0 80px
+			font-size: .7em
+			margin: 10px 0 5px 80px
 			padding: 5px
 			white-space: normal
 			line-height: 1.5em
