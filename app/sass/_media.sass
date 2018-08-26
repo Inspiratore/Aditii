@@ -30,6 +30,11 @@
 
 /* ==========  Medium Devices, Desktops ========== */
 @media only screen and (max-width:1024px)
+	.top-nav
+		#search
+			-moz-transform: translate(0px, 25px)
+		.loupe
+			-moz-transform: translate(-34px, 25px)
 	#promo
 		padding: 65px 245px 60px 85px
 		p
@@ -65,7 +70,7 @@
 			width: 270px
 			transform: translate(-20px,25px)
 		.loupe
-			transform: translate(223px,-1px)
+			transform: translate(220px,-5px)
 
 	#main_menu
 		position: relative
@@ -84,12 +89,16 @@
 						padding: 5px
 
 	#promo
+		img
+			width: 
 		padding: 65px 64px 60px 40px
 		h2
 			font-size: 2em
 			padding-right: 80px
 		p
 			padding-left: 40px
+			br
+				display: none
 		.buy
 			margin-left: 140px
 		.carousel-inner
@@ -133,7 +142,7 @@
 			height: 20px
 			transform: translate(0px,32px)
 		.loupe
-			transform: translate(100px,12px)
+			transform: translate(95px,5px)
 			background-size: 15px 15px
 		#cart
 			transform: translate(0px,10px)
@@ -169,9 +178,11 @@
 			position: absolute
 			z-index: 101
 			background: $blocks
+			color: $text
 			display: none
 			width: 100%
 			top: 30px
+			opacity: 1 !important
 			ul
 				margin: 0 5px
 				padding: 0
@@ -181,7 +192,7 @@
 				align-items: center
 
 				li
-					font-size: 1em
+					font-size: 1.1em
 
 					&:nth-child(even)
 						display: none
@@ -296,7 +307,59 @@
 			font-size: 1.5em
 			height: 75px
 			padding: 20px 0 10px
-			m0
+
+
+
+/* =========  Blackberry, Galaxy & Other Phones ========= */
+@media only screen and (max-width:360px)
+	.menu
+		li
+			font-size: .9em
+	#promo
+		padding: 10px
+		height: 240px
+		h2
+			margin-top: -25px
+			margin-left: 70px
+			font-size: 1.3em
+		img
+			width: 130px
+		p
+			font-size: .7em
+			margin: 10px 0 5px 107px
+			padding: 10px 0
+
+			br
+				display: none
+		.buy
+			
+			font-size: .6em
+			border: 1px solid $text
+			border-radius: 5px
+			margin: 5px 0 10px 75px
+			padding: 3px
+
+	
+	#goods_slider
+		#all_goods
+			img:first-child
+				padding-left: 50px
+			.shop
+				width: 40px
+				height: 22px
+				margin: 0
+				padding: 0
+		.slider_caption
+			transform: translate(210px,-100px)
+		.owl-next
+			right: 11.5%	
+	#featured_products
+		h3
+			left: 110px
+
+
+
+
 
 
 /* ==========  Custom, iPhone Retina ========== */
@@ -313,8 +376,9 @@
 			width: 60px
 			height: 15px
 			transform: translate(12px,20px)
+			-moz-transform: translate(12px,30px)
 		.loupe
-			transform: translate(-4px,40px)
+			transform: translate(-15px,30px)
 			background-size: 10px 10px
 		#cart
 			transform: translate(-25px,30px)
@@ -327,6 +391,7 @@
 	#main_menu
 		position: relative
 		.hamburger
+
 			display: inline-block
 			padding: 0
 			position: absolute

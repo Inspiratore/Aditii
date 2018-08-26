@@ -9,13 +9,14 @@
 		width: 435px
 		height: 31px
 		transform: translate(0px,16px)
+		-moz-transform: translate(0px,25px)
 		text-align: center
 		border: .3px solid rgba($text2,.5)
 		box-shadow: .5px 1px rgba($text2,.5)
 	.loupe
-		transform: translate(-30px,30px)
+		transform: translate(-35px,26px)
 		background: none
-		background: url(".././img/loupe.gif") no-repeat
+		background: url(".././img/loupe.gif") no-repeat center center
 		border: 0
 		width: 30px
 		height: 30px
@@ -39,6 +40,7 @@
 		font-size: 1.2em
 		width: 100%
 		list-style: none
+		z-index: 100
 		ul
 			margin: 5px 150px 5px 102px
 			li
@@ -55,6 +57,11 @@
 						color: $menu
 					&:active
 						color: $text2
+.blur
+	opacity: .2
+	z-index: 1
+
+
 					
 					
 

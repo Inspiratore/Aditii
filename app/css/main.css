@@ -3563,16 +3563,17 @@ html {
     -webkit-transform: translate(0px, 16px);
         -ms-transform: translate(0px, 16px);
             transform: translate(0px, 16px);
+    -moz-transform: translate(0px, 25px);
     text-align: center;
     border: 0.3px solid rgba(183, 183, 183, 0.5);
     -webkit-box-shadow: 0.5px 1px rgba(183, 183, 183, 0.5);
             box-shadow: 0.5px 1px rgba(183, 183, 183, 0.5); }
   .top-nav .loupe {
-    -webkit-transform: translate(-30px, 30px);
-        -ms-transform: translate(-30px, 30px);
-            transform: translate(-30px, 30px);
+    -webkit-transform: translate(-35px, 26px);
+        -ms-transform: translate(-35px, 26px);
+            transform: translate(-35px, 26px);
     background: none;
-    background: url(".././img/loupe.gif") no-repeat;
+    background: url(".././img/loupe.gif") no-repeat center center;
     border: 0;
     width: 30px;
     height: 30px; }
@@ -3596,7 +3597,8 @@ html {
     font-family: "bebas_neue", sans-serif;
     font-size: 1.2em;
     width: 100%;
-    list-style: none; }
+    list-style: none;
+    z-index: 100; }
     .top-nav #main_menu ul {
       margin: 5px 150px 5px 102px; }
       .top-nav #main_menu ul li {
@@ -3614,6 +3616,10 @@ html {
             color: #4bd0c2; }
           .top-nav #main_menu ul li a:active {
             color: #b7b7b7; }
+
+.blur {
+  opacity: .2;
+  z-index: 1; }
 
 .line_separator {
   width: 100%;
@@ -3636,12 +3642,14 @@ html {
     text-transform: uppercase;
     font-family: "bebas_neue", sans-serif;
     font-size: 3em;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding-left: 5px; }
   #promo p {
     margin-bottom: 50px;
-    padding-left: 70px;
+    padding-left: 55px;
     text-align: left;
-    font-family: "open_sans", sans-serif; }
+    font-family: "open_sans", sans-serif;
+    white-space: normal; }
   #promo .buy {
     border: 2px solid #ffffff;
     -webkit-border-radius: 5px;
@@ -3684,11 +3692,11 @@ html {
     width: auto !important;
     padding: 0 25px; }
     .slideX img:first-child {
-      padding-left: 100px; }
+      padding-left: 80px; }
   .slideX .slider_caption {
-    -webkit-transform: translate(290px, -120px);
-        -ms-transform: translate(290px, -120px);
-            transform: translate(290px, -120px);
+    -webkit-transform: translate(265px, -120px);
+        -ms-transform: translate(265px, -120px);
+            transform: translate(265px, -120px);
     width: 80px;
     height: auto; }
     .slideX .slider_caption h4 {
@@ -3884,6 +3892,10 @@ body {
 
 /* ==========  Medium Devices, Desktops ========== */
 @media only screen and (max-width: 1024px) {
+  .top-nav #search {
+    -moz-transform: translate(0px, 25px); }
+  .top-nav .loupe {
+    -moz-transform: translate(-34px, 25px); }
   #promo {
     padding: 65px 245px 60px 85px; }
     #promo p {
@@ -3916,9 +3928,9 @@ body {
         -ms-transform: translate(-20px, 25px);
             transform: translate(-20px, 25px); }
   .top-nav .loupe {
-    -webkit-transform: translate(223px, -1px);
-        -ms-transform: translate(223px, -1px);
-            transform: translate(223px, -1px); }
+    -webkit-transform: translate(220px, -5px);
+        -ms-transform: translate(220px, -5px);
+            transform: translate(220px, -5px); }
   #main_menu {
     position: relative; }
     #main_menu .menu {
@@ -3939,6 +3951,8 @@ body {
       padding-right: 80px; }
     #promo p {
       padding-left: 40px; }
+      #promo p br {
+        display: none; }
     #promo .buy {
       margin-left: 140px; }
     #promo .carousel-inner {
@@ -3978,9 +3992,9 @@ body {
         -ms-transform: translate(0px, 32px);
             transform: translate(0px, 32px); }
   .top-nav .loupe {
-    -webkit-transform: translate(100px, 12px);
-        -ms-transform: translate(100px, 12px);
-            transform: translate(100px, 12px);
+    -webkit-transform: translate(95px, 5px);
+        -ms-transform: translate(95px, 5px);
+            transform: translate(95px, 5px);
     -webkit-background-size: 15px 15px;
             background-size: 15px 15px; }
   .top-nav #cart {
@@ -4018,9 +4032,11 @@ body {
       position: absolute;
       z-index: 101;
       background: #3dc4b7;
+      color: #ffffff;
       display: none;
       width: 100%;
-      top: 30px; }
+      top: 30px;
+      opacity: 1 !important; }
       #main_menu .menu ul {
         margin: 0 5px;
         padding: 0;
@@ -4042,7 +4058,7 @@ body {
             -ms-flex-align: center;
                 align-items: center; }
         #main_menu .menu ul li {
-          font-size: 1em; }
+          font-size: 1.1em; }
           #main_menu .menu ul li:nth-child(even) {
             display: none; }
           #main_menu .menu ul li a {
@@ -4153,6 +4169,48 @@ body {
       height: 75px;
       padding: 20px 0 10px; } }
 
+/* =========  Blackberry, Galaxy & Other Phones ========= */
+@media only screen and (max-width: 360px) {
+  .menu li {
+    font-size: .9em; }
+  #promo {
+    padding: 10px;
+    height: 240px; }
+    #promo h2 {
+      margin-top: -25px;
+      margin-left: 70px;
+      font-size: 1.3em; }
+    #promo img {
+      width: 130px; }
+    #promo p {
+      font-size: .7em;
+      margin: 10px 0 5px 107px;
+      padding: 10px 0; }
+      #promo p br {
+        display: none; }
+    #promo .buy {
+      font-size: .6em;
+      border: 1px solid #ffffff;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      margin: 5px 0 10px 75px;
+      padding: 3px; }
+  #goods_slider #all_goods img:first-child {
+    padding-left: 50px; }
+  #goods_slider #all_goods .shop {
+    width: 40px;
+    height: 22px;
+    margin: 0;
+    padding: 0; }
+  #goods_slider .slider_caption {
+    -webkit-transform: translate(210px, -100px);
+        -ms-transform: translate(210px, -100px);
+            transform: translate(210px, -100px); }
+  #goods_slider .owl-next {
+    right: 11.5%; }
+  #featured_products h3 {
+    left: 110px; } }
+
 /* ==========  Custom, iPhone Retina ========== */
 @media only screen and (max-width: 320px) {
   .top-nav .col-md-auto {
@@ -4167,11 +4225,12 @@ body {
     height: 15px;
     -webkit-transform: translate(12px, 20px);
         -ms-transform: translate(12px, 20px);
-            transform: translate(12px, 20px); }
+            transform: translate(12px, 20px);
+    -moz-transform: translate(12px, 30px); }
   .top-nav .loupe {
-    -webkit-transform: translate(-4px, 40px);
-        -ms-transform: translate(-4px, 40px);
-            transform: translate(-4px, 40px);
+    -webkit-transform: translate(-15px, 30px);
+        -ms-transform: translate(-15px, 30px);
+            transform: translate(-15px, 30px);
     -webkit-background-size: 10px 10px;
             background-size: 10px 10px; }
   .top-nav #cart {
